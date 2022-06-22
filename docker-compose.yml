@@ -1,6 +1,10 @@
 version: '3'
 
 services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "9095:9095"
 
   zookeeperA:
     image: confluentinc/cp-zookeeper
